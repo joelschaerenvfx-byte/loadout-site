@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoadOut Support</title>
+<meta name="description" content="Help with LoadOut: your account, signing in, deleting your account, and how to reach the developer.">
+<style>
+  :root {
+    --ink: #F3F1EC; --slab: #FFFFFF; --line: #DEDAD2;
+    --chalk: #1A1A18; --dust: #6E6C65; --signal: #E84E15;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #0E0E0D; --slab: #1A1A18; --line: #2E2E2B; --chalk: #F2F0EA; --dust: #8C8A83; --signal: #FF5A1F; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ink); color: var(--chalk);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+  .eyebrow {
+    font: 500 12px/1 ui-monospace, "SF Mono", Menlo, monospace;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--signal);
+  }
+  h1 {
+    font: 900 40px/1.05 -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: -.01em; text-transform: uppercase; margin: 12px 0 8px;
+  }
+  .lead { color: var(--dust); margin: 0 0 32px; }
+  h2 {
+    font: 500 13px/1.2 ui-monospace, "SF Mono", Menlo, monospace;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--dust);
+    margin: 40px 0 12px;
+  }
+  .card { background: var(--slab); border-radius: 22px; padding: 4px 22px; }
+  details { border-top: 1px solid var(--line); padding: 14px 0; }
+  details:first-child { border-top: 0; }
+  summary { cursor: pointer; font-weight: 600; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; color: var(--dust); font-weight: 400; }
+  details[open] summary::after { content: "–"; }
+  details p { margin: 10px 0 0; color: var(--chalk); }
+  .contact { background: var(--slab); border-radius: 22px; padding: 20px 22px; }
+  .button {
+    display: inline-block; margin-top: 8px; padding: 14px 22px; border-radius: 14px;
+    background: var(--signal); color: #fff; font-weight: 700; text-decoration: none;
+  }
+  a { color: var(--signal); }
+  footer { margin-top: 48px; color: var(--dust); font-size: 14px; }
+  @media (max-width: 480px) { h1 { font-size: 32px; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">LoadOut</div>
+  <h1>Support</h1>
+  <p class="lead">LoadOut loads the bar for you, works out your maxes and logs your training. Here's help with the most common questions.</p>
+
+  <h2>Your account</h2>
+  <div class="card">
+    <details>
+      <summary>Is LoadOut free?</summary>
+      <p>Yes. Your account is free and needs no payment details.</p>
+    </details>
+    <details>
+      <summary>I didn't get the confirmation email</summary>
+      <p>Check your spam folder. The email comes from LoadOut and contains a link that opens the app and signs you in. Still nothing after a few minutes? Write to us below.</p>
+    </details>
+    <details>
+      <summary>I forgot my password</summary>
+      <p>On the Log In screen, type your email and tap <strong>Forgot password?</strong>. Open the link in the email on your iPhone, and LoadOut asks you for a new password.</p>
+    </details>
+    <details>
+      <summary>How do I delete my account?</summary>
+      <p>In LoadOut, open <strong>Settings → Account → Delete Account</strong>. Your account is deleted right away, together with all the training stored in it and on that iPhone. This can't be undone.</p>
+    </details>
+  </div>
+
+  <h2>Your training</h2>
+  <div class="card">
+    <details>
+      <summary>Where are my workouts stored?</summary>
+      <p>On your iPhone first, and in your account. LoadOut works without signal: anything you log in the gym is copied to your account once you're back online. You can see when it last synced under <strong>Settings → Account</strong>.</p>
+    </details>
+    <details>
+      <summary>How do I get my workouts on a new iPhone?</summary>
+      <p>Install LoadOut and log in with the same account (same email, Apple or Google sign-in). Your workouts, plans, records and gym setup download automatically.</p>
+    </details>
+    <details>
+      <summary>I signed in with another account and my workouts are gone</summary>
+      <p>Each iPhone shows the training of the account that is signed in. Log back in with your own account and your workouts come back from it. Changes made without a connection that hadn't synced before signing out can be lost, so sign out when you're online.</p>
+    </details>
+  </div>
+
+  <h2>Contact</h2>
+  <div class="contact">
+    <p style="margin-top:0">Found a bug, have an idea, or need help with your data? Testing the beta? You can also send feedback straight from TestFlight.</p>
+    <a class="button" href="mailto:joelschaerenvfx@gmail.com?subject=LoadOut%20Support">Email Support</a>
+  </div>
+
+  <footer>LoadOut · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
