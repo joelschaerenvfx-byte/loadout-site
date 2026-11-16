@@ -8,11 +8,11 @@
 <style>
   :root {
     --ink: #F3F1EC; --slab: #FFFFFF; --line: #DEDAD2;
-    --chalk: #1A1A18; --dust: #6E6C65; --signal: #E84E15;
+    --chalk: #1A1A18; --dust: #6E6C65; --signal: #B83A0B; --on-signal: #FFFFFF;
     color-scheme: light dark;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --ink: #0E0E0D; --slab: #1A1A18; --line: #2E2E2B; --chalk: #F2F0EA; --dust: #8C8A83; --signal: #FF5A1F; }
+    :root { --ink: #0E0E0D; --slab: #1A1A18; --line: #2E2E2B; --chalk: #F2F0EA; --dust: #8C8A83; --signal: #FF5A1F; --on-signal: #0E0E0D; }
   }
   * { box-sizing: border-box; }
   body {
@@ -43,6 +43,7 @@
   a { color: var(--signal); }
   .summary li::marker { color: var(--signal); }
   table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .contact-block { font-style: normal; line-height: 1.5; }
   th, td { text-align: left; vertical-align: top; padding: 10px 0; border-top: 1px solid var(--line); }
   th { color: var(--dust); font-weight: 500; width: 38%; padding-right: 14px; }
   tr:first-child th, tr:first-child td { border-top: 0; }
@@ -54,30 +55,31 @@
 <main>
   <div class="eyebrow">LoadOut</div>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective 7 November 2026</p>
+  <p class="meta">Effective 16 November 2026 · Version 2026-11-16</p>
 
   <section class="card summary">
     <p><strong>The short version</strong></p>
     <ul>
       <li>Your workouts, plans, records and gym setup are saved on your iPhone and <strong>stored in your account</strong>, so they come back on a new phone. They are used only to run the app for you.</li>
-      <li>For your account we keep your <strong>email address</strong>, an <strong>account ID</strong> and your <strong>name</strong>, if you enter one or Apple or Google shares it.</li>
-      <li>No ads, no tracking, no analytics, and we never sell your data.</li>
-      <li>You can delete your account at any time in the app: <strong>Settings → your name at the top → Delete Account</strong>.</li>
+      <li>For your account we keep your <strong>email address</strong>, an <strong>account ID</strong>, your <strong>name</strong> if you enter one or Apple or Google shares it, and <strong>which Terms you accepted and when</strong>.</li>
+      <li>No ads, no tracking, no analytics, no marketing emails, and we never sell your data or use it to train AI.</li>
+      <li>In the app you can <strong>download a copy of all your data</strong> and <strong>delete your account</strong> at any time: Settings → your name at the top.</li>
     </ul>
   </section>
 
-  <h2>Who we are</h2>
+  <h2>Who is responsible</h2>
   <div class="card">
-    <p>LoadOut (on the App Store as “LoadOut Lifting”) is an iPhone app for barbell training made by Joel Schaeren, Switzerland. Joel Schaeren is responsible for the processing of your personal data described here.</p>
-    <p>Questions or requests about your data: <a href="mailto:joelschaerenvfx@gmail.com">joelschaerenvfx@gmail.com</a></p>
+    <p>LoadOut (on the App Store as “LoadOut Lifting”) is an iPhone app for barbell training made by Joel Schaeren in Switzerland, who is responsible for the processing of your personal data described here (the “controller”).</p>
+    <address class="contact-block">Joel Schaeren<br>Thunstrasse 20 A<br>3110 Münsingen<br>Switzerland<br><a href="mailto:joelschaerenvfx@gmail.com">joelschaerenvfx@gmail.com</a></address>
+    <p>This policy follows the Swiss Federal Act on Data Protection (FADP) and, for people in the EU and EEA, the General Data Protection Regulation (GDPR).</p>
   </div>
 
   <h2>Your training data</h2>
   <div class="card">
-    <p>What you log in LoadOut is saved on your iPhone first, so the app works without a connection: workouts and sets, plans and the planner, personal records, bodyweight, custom exercises, your gyms, bars and plates, and your settings (units, goal, appearance, text size, weekly goal, reminder time, Now panel and rest timer preferences).</p>
-    <p>While you are signed in, the app copies this data to your account whenever it has a connection, so you can restore it on a new or reinstalled iPhone. It is stored with your account in the EU and is visible only to your account. We use it only to provide the app to you: we don't sell it, use it for advertising, or share it with anyone else.</p>
+    <p>What you log in LoadOut is saved on your iPhone first, so the app works without a connection: workouts and sets, WODs and their scores, plans and the planner, personal records, bodyweight, custom exercises, your gyms, bars and plates, and your settings (units, how you train, appearance, text size, weekly goal, reminder time, Now panel and rest timer preferences).</p>
+    <p>While you are signed in, the app copies this data to your account whenever it has a connection, so you can restore it on a new or reinstalled iPhone. It is stored with your account in the EU and only your account can read it. We use it only to provide the app to you: we don't sell it, use it for advertising or profiling, or share it with anyone else.</p>
+    <p>Bodyweight and training entries can say something about your health. They are optional, only you see them, and you can delete any entry, or everything, at any time.</p>
     <p>Reminders for planned workouts and the rest timer are local notifications created on your iPhone. LoadOut's widgets read the data on the same iPhone.</p>
-    <p>If you sign in to a different account on the same iPhone, the training on that iPhone is replaced by that account's. Your own stays in your account.</p>
   </div>
 
   <h2>What we collect for your account</h2>
@@ -87,43 +89,62 @@
       <tr><th>Password</th><td>Only if you sign up with email. It is stored as a secure hash; nobody can read it.</td></tr>
       <tr><th>Name</th><td>Only if you enter it in your profile, or Apple or Google shares it when you sign in with them. It is shown only to you.</td></tr>
       <tr><th>Account ID</th><td>A random identifier for your account, and the identifier Apple or Google gives us for your sign-in.</td></tr>
+      <tr><th>Acceptance of the Terms</th><td>Which version of the Terms of Service and this Privacy Policy you accepted and when, saved with your account, so we can show that you agreed.</td></tr>
       <tr><th>Training data</th><td>Your workouts, plans, records, bodyweight, custom exercises, gyms and settings, to keep them in step with your account and restore them on another iPhone.</td></tr>
+      <tr><th>Pro status</th><td>Whether LoadOut Pro is active. The App Store tells the app on your iPhone; we don't receive your payment details.</td></tr>
       <tr><th>Sign-in records</th><td>When you signed up and last signed in, and technical data such as the IP address of sign-in requests, kept in the account service's security logs.</td></tr>
     </table>
-    <p style="margin-top:14px">We use this data only to run your account (legal basis under the EU GDPR: performance of our agreement with you, Art. 6(1)(b)). We do not use it for advertising or profiling, and we do not track you across apps or websites.</p>
+    <p style="margin-top:14px"><strong>Why we may process it.</strong> To provide the app and your account under our agreement with you (GDPR Art. 6(1)(b)); for sign-in security logs and records of your acceptance of the Terms, our legitimate interest in keeping accounts safe and being able to show what was agreed (Art. 6(1)(f)); and where the law requires us to keep or hand over data (Art. 6(1)(c)).</p>
+    <p>We collect nothing beyond this. LoadOut doesn't ask for your location, contacts, photos, camera, microphone or the Health app, has no advertising identifier, and doesn't read other apps' data.</p>
   </div>
 
   <h2>Services we use</h2>
-  <div class="card">
-    <ul>
-      <li><strong>Supabase</strong> runs the account service and stores your account and training data in the EU (Frankfurt, Germany).</li>
-      <li><strong>Apple</strong> handles Sign in with Apple, if you use it. See <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
-      <li><strong>Google</strong> handles Sign in with Google, if you use it. LoadOut asks only for your name, email address and basic profile. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
-      <li><strong>Supabase</strong> also sends account emails, such as password resets.</li>
-      <li><strong>Apple</strong> handles any purchases and subscriptions in LoadOut through the App Store. We never see your payment details; Apple tells the app only whether a subscription is active.</li>
-      <li><strong>Apple</strong> delivers the app through the App Store and TestFlight. If you agree to share analytics with app developers in your iPhone's settings, Apple may share crash reports and anonymous usage figures with us; while you test a beta, also the feedback you choose to send. This happens under Apple's terms, and LoadOut itself adds nothing to it.</li>
-    </ul>
-    <p>These providers process data on our behalf and only for these purposes. Some of them are based in the United States; where data leaves Switzerland or the EU, it is protected by the safeguards these providers offer, such as the EU Standard Contractual Clauses.</p>
+  <div class="card" id="subprocessors">
+    <p>These companies are involved in running LoadOut. Supabase processes your data on our behalf (a “processor”), under a data processing agreement. Apple, Google and GitHub provide their own services to you and are responsible for them under their own privacy policies.</p>
+    <table>
+      <tr><th>Supabase, Inc. (USA)</th><td>Runs the account service: sign-in, your account and training data, and account emails such as password resets. Data is stored in the EU (Frankfurt, Germany) on Amazon Web Services, which Supabase uses for hosting.</td></tr>
+      <tr><th>Apple</th><td>The App Store, TestFlight, purchases and subscriptions, and Sign in with Apple, if you use it. We never see your payment details. If you share analytics with app developers in your iPhone's settings, Apple may share crash reports and anonymous usage figures with us. <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a></td></tr>
+      <tr><th>Google</th><td>Sign in with Google, if you use it: LoadOut asks only for your name, email address and basic profile. During that sign-in, Google's sign-in software in the app also sends Google information it uses to run, protect and improve the sign-in, such as a device identifier, approximate location derived from your IP address, and how the sign-in went. LoadOut does not receive this. Emails you send to our support address are handled in Google's Gmail. <a href="https://policies.google.com/privacy">Google's privacy policy</a></td></tr>
+      <tr><th>GitHub, Inc. (USA)</th><td>Hosts this website. GitHub records visitors' IP addresses in its server logs for security. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a></td></tr>
+    </table>
+    <p style="margin-top:14px">Some of these companies are based in the United States. Where data leaves Switzerland or the EU, it is protected by the safeguards they offer, such as the EU Standard Contractual Clauses and, where they take part, the EU-U.S. and Swiss-U.S. Data Privacy Frameworks.</p>
   </div>
 
-  <h2>What we don't collect</h2>
+  <h2>No tracking, cookies, marketing or AI training</h2>
   <div class="card">
-    <p>LoadOut has no ads, no analytics or tracking tools, and no advertising identifier. It doesn't ask for your location, contacts, photos, camera, microphone or the Health app, and it doesn't read other apps' data.</p>
+    <ul>
+      <li><strong>No tracking or analytics.</strong> LoadOut contains no advertising, analytics or tracking tools, and doesn't track you across apps or websites. Neither the app nor this website sets cookies or similar trackers, so there is nothing to consent to. Apple's and Google's own sign-in pages, if you use them, follow their own policies.</li>
+      <li><strong>No marketing emails.</strong> We only send emails your account needs, such as confirming your address or resetting your password. If we ever want to send news or offers, we will ask for your separate consent first, and every such email will have an unsubscribe link.</li>
+      <li><strong>No AI training.</strong> We don't use your data to train artificial-intelligence models, and we don't give it to anyone for that purpose. LoadOut has no AI features that process your data.</li>
+    </ul>
   </div>
 
   <h2>How we protect it</h2>
   <div class="card">
-    <p>Data travels between the app and your account encrypted (HTTPS). In the account service, each row of training data is tied to your account and the database only lets that account read or change it. Passwords are stored as secure hashes.</p>
+    <p>Data travels between the app and your account encrypted (HTTPS) and is encrypted at rest by the hosting provider. In the account service, each row of training data is tied to your account and the database only lets that account read or change it. Passwords are stored as secure hashes. On your iPhone, the data is protected by iOS data protection.</p>
   </div>
 
-  <h2>How long we keep it</h2>
+  <h2 id="retention">How long we keep it</h2>
   <div class="card">
-    <p>We keep your account data for as long as you have an account. When you delete your account, it is removed from the account service straight away, together with all training data stored in it, and the app clears it from your iPhone; copies in the provider's backups are overwritten after a limited time.</p>
+    <table>
+      <tr><th>Account and training data</th><td>As long as you have an account. When you delete it in the app, it is deleted from the account service immediately, with all training data in it, and the app clears it from your iPhone.</td></tr>
+      <tr><th>Backups</th><td>Copies in the account service's backups are overwritten within 30 days.</td></tr>
+      <tr><th>Sign-in security logs</th><td>Up to 90 days, then deleted.</td></tr>
+      <tr><th>Acceptance of the Terms</th><td>As long as your account exists; deleted with it.</td></tr>
+      <tr><th>Support emails</th><td>Up to 2 years after our last message, then deleted, unless we need them longer to handle a legal claim.</td></tr>
+      <tr><th>Data on your iPhone</th><td>Until you delete your account, sign in with another account on that iPhone, or delete the app.</td></tr>
+    </table>
   </div>
 
-  <h2>Your rights</h2>
+  <h2 id="rights">Your rights</h2>
   <div class="card">
-    <p>You can ask for a copy of your account data, have it corrected or deleted, object to its processing, and receive it in a portable format. Delete your account yourself in the app (<strong>Settings → your name at the top → Delete Account</strong>), or write to the address above and we'll answer within 30 days.</p>
+    <p>You can get a copy of your data, have it corrected or deleted, restrict or object to its processing, and receive it in a portable format. Most of this you can do yourself in the app:</p>
+    <ul>
+      <li><strong>Get a copy:</strong> Settings → your name at the top → <strong>Export My Data</strong> gives you everything in your account as a JSON file.</li>
+      <li><strong>Correct it:</strong> edit or delete any entry in the app, and your name in your profile.</li>
+      <li><strong>Delete it:</strong> Settings → your name at the top → <strong>Delete Account</strong>.</li>
+    </ul>
+    <p>For anything else, write to <a href="mailto:joelschaerenvfx@gmail.com">joelschaerenvfx@gmail.com</a>. We answer within 30 days and may ask you to confirm the request from your account's email address, so nobody else can get your data.</p>
     <p>You can also complain to a data protection authority: in Switzerland the Federal Data Protection and Information Commissioner (FDPIC), in the EU the authority in your country.</p>
   </div>
 
@@ -134,10 +155,10 @@
 
   <h2>Changes</h2>
   <div class="card">
-    <p>If this policy changes, we'll update it here and change the date at the top. If a change matters for how your data is used, we'll also tell you in the app.</p>
+    <p>If this policy changes, we'll update it here and change the date and version at the top. If a change matters for how your data is used, we'll tell you in the app and ask you to read it before you continue.</p>
   </div>
 
-  <footer>LoadOut · <a href="support.html">Support</a></footer>
+  <footer>LoadOut · <a href="terms.html">Terms of Service</a> · <a href="support.html">Support</a> · Joel Schaeren, Thunstrasse 20 A, 3110 Münsingen, Switzerland</footer>
 </main>
 </body>
 </html>

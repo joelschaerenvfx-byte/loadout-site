@@ -8,11 +8,11 @@
 <style>
   :root {
     --ink: #F3F1EC; --slab: #FFFFFF; --line: #DEDAD2;
-    --chalk: #1A1A18; --dust: #6E6C65; --signal: #E84E15;
+    --chalk: #1A1A18; --dust: #6E6C65; --signal: #B83A0B; --on-signal: #FFFFFF;
     color-scheme: light dark;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --ink: #0E0E0D; --slab: #1A1A18; --line: #2E2E2B; --chalk: #F2F0EA; --dust: #8C8A83; --signal: #FF5A1F; }
+    :root { --ink: #0E0E0D; --slab: #1A1A18; --line: #2E2E2B; --chalk: #F2F0EA; --dust: #8C8A83; --signal: #FF5A1F; --on-signal: #0E0E0D; }
   }
   * { box-sizing: border-box; }
   body {
@@ -45,7 +45,7 @@
   .contact { background: var(--slab); border-radius: 22px; padding: 20px 22px; }
   .button {
     display: inline-block; margin-top: 8px; padding: 14px 22px; border-radius: 14px;
-    background: var(--signal); color: #fff; font-weight: 700; text-decoration: none;
+    background: var(--signal); color: var(--on-signal); font-weight: 700; text-decoration: none;
   }
   a { color: var(--signal); }
   footer { margin-top: 48px; color: var(--dust); font-size: 14px; }
@@ -61,7 +61,7 @@
     <p style="margin-top:0">Questions, bugs or ideas: <strong>joelschaerenvfx@gmail.com</strong></p>
     <a class="button" href="support.html">Support</a>
   </div>
-  <footer>LoadOut · <a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a></footer>
+  <footer>LoadOut · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a> · <a href="support.html#legal-notice">Legal notice</a> · Joel Schaeren, Thunstrasse 20 A, 3110 Münsingen, Switzerland</footer>
 </main>
 </body>
 </html>
