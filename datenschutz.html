@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoadOut Datenschutzerklärung</title>
+<meta name="description" content="Wie LoadOut mit deinen Daten umgeht: was gespeichert wird, wo, wie lange, wer beteiligt ist und welche Rechte du hast.">
+<link rel="alternate" hreflang="en" href="privacy.html">
+<link rel="alternate" hreflang="de" href="datenschutz.html">
+<link rel="alternate" hreflang="es" href="privacy-es.html">
+<link rel="alternate" hreflang="ru" href="privacy-ru.html">
+<link rel="alternate" hreflang="zh-Hans" href="privacy-zh.html">
+<link rel="alternate" hreflang="x-default" href="privacy.html">
+<style>
+  :root {
+    --ink: #F3F1EC; --slab: #FFFFFF; --line: #DEDAD2;
+    --chalk: #1A1A18; --dust: #6E6C65; --signal: #B83A0B; --on-signal: #FFFFFF;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #0E0E0D; --slab: #1A1A18; --line: #2E2E2B; --chalk: #F2F0EA; --dust: #8C8A83; --signal: #FF5A1F; --on-signal: #0E0E0D; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 16px; }
+  body {
+    margin: 0; background: var(--ink); color: var(--chalk);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+  .eyebrow {
+    font: 500 12px/1 ui-monospace, "SF Mono", Menlo, monospace;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--signal);
+  }
+  h1 {
+    font: 900 40px/1.05 -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: -.01em; text-transform: uppercase; margin: 12px 0 8px;
+    hyphens: manual; -webkit-hyphens: manual;
+  }
+  .meta { color: var(--dust); font-size: 15px; margin: 0 0 6px; }
+  .langs { color: var(--dust); font-size: 15px; margin: 0 0 32px; }
+  .langs a { color: var(--dust); }
+  .langs [aria-current] { color: var(--chalk); font-weight: 600; }
+  .nowrap { white-space: nowrap; }
+  h2 {
+    font: 500 13px/1.2 ui-monospace, "SF Mono", Menlo, monospace;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--dust);
+    margin: 40px 0 12px;
+  }
+  .card { background: var(--slab); border-radius: 22px; padding: 20px 22px; }
+  .card > :first-child { margin-top: 0; }
+  .card > :last-child { margin-bottom: 0; }
+  ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  strong { font-weight: 600; }
+  a { color: var(--signal); overflow-wrap: anywhere; }
+  .summary li::marker { color: var(--signal); }
+  .basis { color: var(--dust); font-size: 15px; border-top: 1px solid var(--line); padding-top: 12px; }
+  .notice { border-left: 3px solid var(--signal); padding: 2px 0 2px 14px; }
+  .toc ol { margin: 0; padding-left: 1.6em; columns: 2; column-gap: 28px; font-size: 15px; }
+  .toc li { margin: 4px 0; break-inside: avoid; }
+  .toc a { color: var(--chalk); text-decoration: none; }
+  .toc a:hover { color: var(--signal); text-decoration: underline; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 0; border-top: 1px solid var(--line); }
+  th { color: var(--dust); font-weight: 500; width: 36%; padding-right: 14px; }
+  tr:first-child th, tr:first-child td { border-top: 0; }
+  table + p { margin-top: 14px; }
+  .contact-block { font-style: normal; line-height: 1.5; }
+  footer { margin-top: 48px; color: var(--dust); font-size: 14px; }
+  @media (max-width: 480px) {
+    h1 { font-size: 32px; }
+    .toc ol { columns: 1; }
+    th, td { display: block; width: auto; padding: 0; }
+    th { padding-top: 10px; padding-right: 0; }
+    td { padding-bottom: 10px; border-top: 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">LoadOut</div>
+  <h1>Datenschutz&shy;erklärung</h1>
+  <p class="meta">Gültig ab 19.&nbsp;November&nbsp;2026 · <span class="nowrap">Version 2026-11-19</span></p>
+  <nav class="langs" aria-label="Sprachen"><a href="privacy.html" hreflang="en" lang="en">English</a> · <span aria-current="page">Deutsch</span> · <a href="privacy-es.html" hreflang="es" lang="es">Español</a> · <a href="privacy-ru.html" hreflang="ru" lang="ru">Русский</a> · <a href="privacy-zh.html" hreflang="zh-Hans" lang="zh-Hans">中文</a></nav>
+
+  <section class="card summary" aria-label="Kurzfassung">
+    <p><strong>Kurz gesagt</strong></p>
+    <ul>
+      <li>Dein Training wird auf deinem iPhone gespeichert und <strong>in deinem Account in der EU</strong> (Frankfurt, Deutschland) abgelegt, damit es auf einem neuen iPhone wieder da ist. Es wird nur genutzt, um LoadOut für dich zu betreiben.</li>
+      <li><strong>Dein Körpergewicht gehört zu den Gesundheitsdaten.</strong> LoadOut speichert es nur mit deiner ausdrücklichen Einwilligung, die du jederzeit widerrufen kannst.</li>
+      <li>Für deinen Account speichern wir deine <strong>E-Mail-Adresse</strong>, eine <strong>Account-ID</strong>, deinen <strong>Namen</strong>, falls du einen einträgst, und <strong>wozu du wann zugestimmt hast</strong>.</li>
+      <li>Keine Werbung, kein Tracking, keine Analyse-Tools und keine Werbe-E-Mails. Wir verkaufen deine Daten nie und nutzen sie nie zum Training von KI.</li>
+      <li>In der App kannst du jederzeit <strong>alle deine Daten herunterladen</strong> und <strong>deinen Account löschen</strong>: Einstellungen → dein Name ganz oben.</li>
+    </ul>
+  </section>
+
+  <nav class="card toc" aria-label="Inhalt" style="margin-top:16px">
+    <ol>
+      <li><a href="#controller">Verantwortlicher</a></li>
+      <li><a href="#training">Dein Training</a></li>
+      <li><a href="#bodyweight">Körpergewicht</a></li>
+      <li><a href="#account">Dein Account</a></li>
+      <li><a href="#pro">LoadOut Pro</a></li>
+      <li><a href="#on-device">Was auf deinem iPhone bleibt</a></li>
+      <li><a href="#contact">Wenn du uns schreibst</a></li>
+      <li><a href="#website">Diese Website</a></li>
+      <li><a href="#subprocessors">Wer sonst beteiligt ist</a></li>
+      <li><a href="#transfers">Daten außerhalb der Schweiz und der EU</a></li>
+      <li><a href="#no-tracking">Kein Tracking, keine Werbung, keine KI</a></li>
+      <li><a href="#security">Sicherheit</a></li>
+      <li><a href="#retention">Wie lange wir Daten aufbewahren</a></li>
+      <li><a href="#rights">Deine Rechte</a></li>
+      <li><a href="#children">Kinder</a></li>
+      <li><a href="#changes">Änderungen</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="controller">1. Verantwortlicher</h2>
+  <div class="card">
+    <p>LoadOut (im App Store als „LoadOut Lifting“) ist eine iPhone-App für Langhanteltraining von Joel Schaeren aus der Schweiz. Er ist für die hier beschriebene Verarbeitung deiner Personendaten verantwortlich („Verantwortlicher“):</p>
+    <address class="contact-block">Joel Schaeren<br>Thunstrasse 20 A<br>3110 Münsingen<br>Schweiz<br><a href="mailto:joelschaerenvfx@gmail.com">joelschaerenvfx@gmail.com</a></address>
+    <p>Diese Datenschutzerklärung gilt für die App LoadOut, ihren Account-Dienst und diese Website. Sie folgt dem Schweizer Bundesgesetz über den Datenschutz (DSG) und, für Personen in der Europäischen Union und im Europäischen Wirtschaftsraum, der Datenschutz-Grundverordnung (DSGVO). Die unten genannten Rechtsgrundlagen sind die der DSGVO. LoadOut hat keinen Datenschutzbeauftragten; schreib bei allen Fragen zu deinen Daten an die Adresse oben.</p>
+  </div>
+
+  <h2 id="training">2. Dein Training</h2>
+  <div class="card">
+    <p>Was du einträgst, wird zuerst auf deinem iPhone gespeichert, damit LoadOut auch ohne Verbindung funktioniert:</p>
+    <ul>
+      <li>Trainings mit ihren Übungen, Sätzen, Gewichten, Wiederholungen, Zeiten, Anstrengung (RPE) und Notizen;</li>
+      <li>WODs mit ihren Teilen, Ergebnissen und Splits sowie die WODs in „Meine WODs“;</li>
+      <li>Pläne und den Planer mit Erinnerungszeiten;</li>
+      <li>persönliche Rekorde und eigene Übungen;</li>
+      <li>deine Gyms mit Ausstattung, Stangen und Scheiben;</li>
+      <li>deine Einstellungen, etwa Einheiten, Trainingsziel und -stile, HYROX-Division, Darstellung, Textgröße, Wochenziel und Timer-Einstellungen.</li>
+    </ul>
+    <p>Solange du angemeldet bist, kopiert die App diese Daten in deinen Account, sobald sie eine Verbindung hat. So sind sie auch auf deinen anderen iPhones und kommen auf einem neuen wieder. Sie werden in der EU (Frankfurt, Deutschland) gespeichert, und nur dein Account kann sie lesen.</p>
+    <p>Wir nutzen sie nur, um dir LoadOut bereitzustellen: um dein Protokoll, deinen Fortschritt und deine Rekorde zu zeigen, Gewichte, Plateaus und Vorschläge zu berechnen und deine iPhones abzugleichen. Was du einträgst, entscheidest du: Trag nur ein, was du behalten möchtest. Notizen sind freier Text und werden wie dein übriges Training gespeichert.</p>
+    <p class="basis">Rechtsgrundlage: unser Vertrag mit dir (DSGVO Art. 6 Abs. 1 lit. b).</p>
+  </div>
+
+  <h2 id="bodyweight">3. Körpergewicht</h2>
+  <div class="card">
+    <p>Dein Körpergewicht gehört zu den Gesundheitsdaten, die das Gesetz besonders schützt (nach dem DSG sind es besonders schützenswerte Personendaten). LoadOut speichert es nur, wenn du zustimmst: Vor deinem ersten Eintrag erklärt die App, was damit geschieht, und fragt nach deiner ausdrücklichen Einwilligung.</p>
+    <ul>
+      <li>Mit deiner Einwilligung werden deine Einträge wie dein Training auf deinem iPhone und in deinem Account gespeichert und nur für dein Körpergewicht-Protokoll und den Verlauf genutzt.</li>
+      <li>Wir halten in deinem Account fest, ob du zugestimmt oder widerrufen hast, zu welchem Wortlaut und wann, damit wir es nachweisen können.</li>
+      <li>Du kannst deine Einwilligung jederzeit widerrufen: Einstellungen → dein Name ganz oben → <strong>Einwilligung zum Körpergewicht widerrufen</strong>. Deine Einträge werden dann auf deinem iPhone und in deinem Account gelöscht. Der Widerruf berührt die Rechtmäßigkeit der Verarbeitung bis dahin nicht.</li>
+      <li>Ohne Einwilligung kannst du alles andere in LoadOut nutzen.</li>
+    </ul>
+    <p>Auch Lifts und andere Trainingseinträge können etwas über deine Fitness aussagen. Sie werden nur so genutzt, wie in <a href="#training">Abschnitt 2</a> beschrieben.</p>
+    <p class="basis">Rechtsgrundlage: deine ausdrückliche Einwilligung (DSGVO Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a; DSG Art. 6 Abs. 7).</p>
+  </div>
+
+  <h2 id="account">4. Dein Account</h2>
+  <div class="card">
+    <table>
+      <tr><th scope="row">E-Mail-Adresse</th><td>Um deinen Account zu erstellen, dich anzumelden, deine Adresse zu bestätigen, dein Passwort zurückzusetzen und dir Bescheid zu geben, wenn es geändert wird. Mit „Mit Apple anmelden“ kannst du stattdessen Apples private Weiterleitungsadresse nutzen.</td></tr>
+      <tr><th scope="row">Passwort</th><td>Nur wenn du dich mit E-Mail registrierst. Es wird als sicherer Hash gespeichert: Niemand kann es lesen, auch wir nicht.</td></tr>
+      <tr><th scope="row">Sprache</th><td>Die Sprache, in der du LoadOut nutzt, damit Account-E-Mails in dieser Sprache ankommen.</td></tr>
+      <tr><th scope="row">Name</th><td>Nur wenn du in deinem Profil einen einträgst oder Google beim Anmelden mit Google den Namen deines Google-Kontos übermittelt. Nur du siehst ihn.</td></tr>
+      <tr><th scope="row">Account-ID</th><td>Eine zufällige Kennung für deinen Account.</td></tr>
+      <tr><th scope="row">Anmeldung mit Apple oder Google</th><td>Die Kennung, die Apple oder Google LoadOut für dich gibt, und ob deine E-Mail-Adresse bestätigt ist. Bei Google zusätzlich der Link zu deinem Google-Profilbild, den LoadOut weder nutzt noch anzeigt.</td></tr>
+      <tr><th scope="row">Wozu du zugestimmt hast</th><td>Welche Version der Nutzungsbedingungen und dieser Datenschutzerklärung du wann akzeptiert hast, und deine Einwilligung zum Körpergewicht (<a href="#bodyweight">Abschnitt 3</a>).</td></tr>
+      <tr><th scope="row">Anmeldeprotokolle</th><td>Wann du dich registriert und zuletzt angemeldet hast, und technische Daten wie die IP-Adresse von Anmeldeanfragen, in den Sicherheitsprotokollen des Account-Dienstes.</td></tr>
+    </table>
+    <p>Um LoadOut zu nutzen, brauchst du einen Account, deshalb ist eine E-Mail-Adresse nötig: deine oder Apples Weiterleitungsadresse. Alles andere ist freiwillig.</p>
+    <p class="basis">Rechtsgrundlage: unser Vertrag mit dir (Art. 6 Abs. 1 lit. b). Für Sicherheitsprotokolle und die Aufzeichnung deiner Zustimmungen zudem unser berechtigtes Interesse, Accounts zu schützen und nachweisen zu können, was vereinbart wurde (Art. 6 Abs. 1 lit. f), und wo das Gesetz uns verpflichtet, Daten aufzubewahren oder herauszugeben (Art. 6 Abs. 1 lit. c).</p>
+  </div>
+
+  <h2 id="pro">5. LoadOut Pro</h2>
+  <div class="card">
+    <p>Käufe und Abos werden von Apple über den App Store abgewickelt und abgerechnet. Wir sehen nie deine Zahlungsdaten oder deinen Apple Account. Der App Store teilt der App auf deinem iPhone mit, ob Pro aktiv ist.</p>
+    <p>Wenn du Pro kaufst, hängt die App deine Account-ID an den Kauf an (Apples „App Account Token“), damit der Kauf deinem Account zugeordnet werden kann, etwa wenn du uns dazu um Hilfe bittest. Apple stellt uns Verkaufsberichte zur Verfügung, die dich nicht identifizieren. Ob ein Account das Launch-Geschenk von einem Jahr Pro hat, ermittelt dein iPhone aus dem Erstellungsdatum des Accounts.</p>
+    <p class="basis">Rechtsgrundlage: unser Vertrag mit dir (Art. 6 Abs. 1 lit. b).</p>
+  </div>
+
+  <h2 id="on-device">6. Was auf deinem iPhone bleibt</h2>
+  <div class="card">
+    <p>Manches erledigt LoadOut vollständig auf deinem iPhone. Nichts davon erreicht uns:</p>
+    <ul>
+      <li><strong>Vorschläge und Berechnungen.</strong> Lösungen für Plateaus, Gewichtssteigerungen, Scheibenbeladungen und 1RM-Schätzungen berechnet dein iPhone nach festen Regeln.</li>
+      <li><strong>Erinnerungen und Timer.</strong> Erinnerungen an geplante Trainings, die Pausen-, Satz- und WOD-Timer und die Erinnerung vor dem Ende eines Gratis-Probezeitraums sind Mitteilungen, die auf deinem iPhone geplant werden. Live-Aktivitäten und Widgets lesen die Daten von LoadOut auf demselben iPhone.</li>
+      <li><strong>Import.</strong> Die Exportdatei einer anderen App, die du auswählst, wird auf deinem iPhone gelesen und nicht hochgeladen. Die darin gefundenen Trainings und Übungen werden Teil deines Trainings (<a href="#training">Abschnitt 2</a>).</li>
+      <li><strong>Export.</strong> „Meine Daten exportieren“ erstellt eine Datei auf deinem iPhone. Wo du sie speicherst oder hinschickst, entscheidest du.</li>
+      <li><strong>Siri und Kurzbefehle</strong> können die Werkzeuge von LoadOut öffnen; was du zu Siri sagst, verarbeitet Apple nach eigenen Regeln.</li>
+      <li><strong>Backups.</strong> Wenn du dein iPhone in iCloud oder auf einem Computer sicherst, enthält das Backup auch die Daten von LoadOut darauf.</li>
+    </ul>
+    <p>LoadOut fragt nicht nach deinem Standort, deinen Kontakten, Fotos, der Kamera, dem Mikrofon oder der Health-App, hat keine Werbe-ID und liest keine Daten anderer Apps.</p>
+  </div>
+
+  <h2 id="contact">7. Wenn du uns schreibst</h2>
+  <div class="card">
+    <p>Wenn du uns eine E-Mail schreibst, erhalten wir deine E-Mail-Adresse, deine Nachricht und etwaige Anhänge und nutzen sie, um dir zu antworten. Unser Support-Postfach liegt bei Google (Gmail).</p>
+    <p>Wenn du LoadOut über TestFlight testest, gibt Apple uns, was TestFlight Entwicklern zur Verfügung stellt, etwa deinen Namen und deine E-Mail-Adresse, falls wir dich per E-Mail eingeladen haben, die installierten Builds sowie Feedback, Bildschirmfotos und Absturzberichte, die du schickst. Hast du in den Einstellungen deines iPhones zugestimmt, Analysedaten mit App-Entwicklern zu teilen, gibt Apple uns außerdem Absturzberichte und Nutzungszahlen, die dich nicht identifizieren.</p>
+    <p class="basis">Rechtsgrundlage: unser Vertrag mit dir, wenn deine Nachricht ihn betrifft (Art. 6 Abs. 1 lit. b); sonst unser berechtigtes Interesse, dir zu antworten und LoadOut zu verbessern (Art. 6 Abs. 1 lit. f).</p>
+  </div>
+
+  <h2 id="website">8. Diese Website</h2>
+  <div class="card">
+    <p>Diese Website wird von GitHub Pages bereitgestellt. Wenn du eine Seite öffnest, erhält GitHub deine IP-Adresse und die üblichen technischen Angaben der Anfrage und speichert sie aus Sicherheitsgründen in seinen Server-Logs. Die Website setzt keine Cookies, hat keine Analyse, keine Werbung und keine eingebetteten Inhalte und lädt keine Schriften oder Skripte von anderen Websites.</p>
+    <p class="basis">Rechtsgrundlage: unser berechtigtes Interesse an einer sicheren, funktionierenden Website (Art. 6 Abs. 1 lit. f).</p>
+  </div>
+
+  <h2 id="subprocessors">9. Wer sonst beteiligt ist</h2>
+  <div class="card">
+    <p>Wir verkaufen oder vermieten deine Daten nicht und geben sie nicht für Werbung weiter. Diese Unternehmen sind am Betrieb von LoadOut beteiligt:</p>
+    <table>
+      <tr><th scope="row">Supabase Pte. Ltd. (Singapur), mit Supabase, Inc. (USA)</th><td>Betreibt den Account-Dienst für uns, als unser „Auftragsverarbeiter“ mit einem Auftragsverarbeitungsvertrag: Anmeldung, dein Account und deine Trainingsdaten, Account-E-Mails wie Bestätigungen und Passwort-Zurücksetzungen (zugestellt von Resend, siehe unten) sowie der Schritt, der LoadOut beim Löschen deines Accounts aus „Mit Apple anmelden“ entfernt. Die Daten werden in der EU (Frankfurt, Deutschland) bei Amazon Web Services gespeichert. Supabase kann für Support und Betrieb aus Singapur und den USA darauf zugreifen und setzt weitere Dienstleister ein, die es in seiner <a href="https://supabase.com/legal/customer-resources/subprocessor-list">Liste der Unterauftragsverarbeiter</a> nennt.</td></tr>
+      <tr><th scope="row">Resend (Plus Five Five, Inc., USA)</th><td>Stellt die Account-E-Mails von LoadOut für uns zu, als unser Auftragsverarbeiter mit einem Auftragsverarbeitungsvertrag: die Bestätigung deiner Adresse, das Zurücksetzen deines Passworts und die Nachricht, wenn dein Passwort geändert wurde. Resend erhält deine E-Mail-Adresse und den Inhalt der E-Mail und bewahrt gesendete E-Mails und ihre Zustellprotokolle 30 Tage auf. Es speichert diese Daten in den USA und setzt weitere Dienstleister ein, die es in seiner <a href="https://resend.com/legal/subprocessors">Liste der Unterauftragsverarbeiter</a> nennt. <a href="https://resend.com/legal/privacy-policy">Datenschutzerklärung von Resend</a></td></tr>
+      <tr><th scope="row">Apple</th><td>Der App Store, Käufe und Abos, TestFlight, „Mit Apple anmelden“ und iCloud. Apple erbringt diese Dienste dir gegenüber und ist selbst für sie verantwortlich. <a href="https://www.apple.com/de/legal/privacy/">Datenschutzrichtlinie von Apple</a></td></tr>
+      <tr><th scope="row">Google</th><td>„Mit Google anmelden“, wenn du es nutzt: LoadOut fragt Google nur nach deinem Namen, deiner E-Mail-Adresse und deinem Basisprofil. Die Anmeldesoftware von Google in der App sendet Google außerdem, was Google für Betrieb, Schutz und Verbesserung der Anmeldung nutzt, etwa eine Gerätekennung, einen aus deiner IP-Adresse abgeleiteten ungefähren Standort und wie die Anmeldung verlief; was du auf der Anmeldeseite von Google eingibst, erhält Google direkt. LoadOut erhält davon nichts. Google betreibt auch unser Support-Postfach (Gmail). <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a></td></tr>
+      <tr><th scope="row">GitHub, Inc. (USA)</th><td>Stellt diese Website bereit (<a href="#website">Abschnitt 8</a>). <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" hreflang="en">Datenschutzerklärung von GitHub</a> (Englisch)</td></tr>
+    </table>
+    <p>An Behörden geben wir Daten nur weiter, wenn das Gesetz es verlangt.</p>
+  </div>
+
+  <h2 id="transfers">10. Daten außerhalb der Schweiz und der EU</h2>
+  <div class="card">
+    <p>Dein Account und deine Trainingsdaten werden in Deutschland gespeichert. Personendaten können auch in diese Länder gelangen:</p>
+    <ul>
+      <li><strong>Deutschland, Irland und andere EU-Staaten</strong>, deren Datenschutz die Schweiz und die EU als angemessen anerkennen.</li>
+      <li><strong>Singapur und die USA</strong>, für Support und Betrieb von Supabase, geschützt durch die EU-Standardvertragsklauseln mit ihrem Schweizer Zusatz im Auftragsverarbeitungsvertrag von Supabase.</li>
+      <li><strong>Die USA</strong>, für Resend, das die Daten der gesendeten E-Mails dort speichert, geschützt durch die EU-Standardvertragsklauseln mit ihren Schweizer Anpassungen im Auftragsverarbeitungsvertrag von Resend und durch seine Zertifizierung unter dem EU-U.S. Data Privacy Framework.</li>
+      <li><strong>Die USA</strong>, für Apple, Google und GitHub, mit den Garantien, die ihre Datenschutzerklärungen beschreiben, etwa den EU-Standardvertragsklauseln und, soweit sie zertifiziert sind, dem EU-U.S. und dem Swiss-U.S. Data Privacy Framework.</li>
+    </ul>
+    <p>Auf Anfrage erhältst du eine Kopie der jeweiligen Garantien.</p>
+  </div>
+
+  <h2 id="no-tracking">11. Kein Tracking, keine Werbung, keine KI</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Kein Tracking, keine Analyse.</strong> LoadOut enthält keine Werbe-, Analyse- oder Tracking-Tools und verfolgt dich nicht über Apps oder Websites hinweg. Weder die App noch diese Website setzen Cookies oder ähnliche Tracker, deshalb gibt es nichts, dem du zustimmen müsstest.</li>
+      <li><strong>Keine Werbe-E-Mails.</strong> Wir senden nur E-Mails, die dein Account braucht, etwa um deine Adresse zu bestätigen, dein Passwort zurückzusetzen oder dir zu sagen, dass es geändert wurde. Falls wir je Neuigkeiten oder Angebote senden möchten, fragen wir vorher separat nach deiner Einwilligung, und jede solche E-Mail enthält einen Abmeldelink.</li>
+      <li><strong>Keine KI.</strong> LoadOut nutzt keine künstliche Intelligenz, und kein KI-Dienst erhält deine Daten. Wir nutzen deine Daten nicht zum Training von KI-Modellen und geben sie niemandem zu diesem Zweck.</li>
+      <li><strong>Keine automatisierten Entscheidungen, kein Profiling.</strong> Nichts in LoadOut entscheidet etwas über dich mit rechtlicher oder ähnlich erheblicher Wirkung (DSGVO Art. 22, DSG Art. 21). Die Vorschläge sind Vorschläge: Was du hebst, entscheidest du.</li>
+    </ul>
+  </div>
+
+  <h2 id="security">12. Sicherheit</h2>
+  <div class="card">
+    <p>Daten werden zwischen der App und dem Account-Dienst verschlüsselt übertragen (HTTPS) und beim Hosting-Anbieter verschlüsselt gespeichert. Die Datenbank lässt jeden Account nur seine eigenen Daten lesen und ändern. Passwörter werden als sichere Hashes gespeichert. Auf deinem iPhone sind die Daten von LoadOut durch die Verschlüsselung von iOS geschützt, und deine Anmeldung liegt im Schlüsselbund des iPhones. Bringt eine Datenpanne voraussichtlich ein hohes Risiko für deine Rechte mit sich, informieren wir dich unverzüglich.</p>
+  </div>
+
+  <h2 id="retention">13. Wie lange wir Daten aufbewahren</h2>
+  <div class="card">
+    <table>
+      <tr><th scope="row">Account und Trainingsdaten</th><td>Solange du deinen Account hast.</td></tr>
+      <tr><th scope="row">Einträge, die du löschst</th><td>Ihr Inhalt wird beim nächsten Abgleich aus deinem Account entfernt. Eine Markierung mit der zufälligen ID des Eintrags und dem Zeitpunkt der Löschung bleibt, bis du deinen Account löschst, damit deine anderen iPhones den Eintrag ebenfalls entfernen.</td></tr>
+      <tr><th scope="row">Körpergewicht nach Widerruf der Einwilligung</th><td>Sofort auf deinem iPhone gelöscht und beim nächsten Abgleich aus deinem Account, wie andere gelöschte Einträge.</td></tr>
+      <tr><th scope="row">Aufzeichnung deiner Zustimmungen</th><td>Solange dein Account besteht.</td></tr>
+      <tr><th scope="row">Backups des Account-Dienstes</th><td>Spätestens nach 30 Tagen überschrieben.</td></tr>
+      <tr><th scope="row">Anmelde-Sicherheitsprotokolle</th><td>Bis zu 90 Tage.</td></tr>
+      <tr><th scope="row">Account-E-Mails</th><td>Resend bewahrt gesendete E-Mails und ihre Zustellprotokolle 30 Tage auf.</td></tr>
+      <tr><th scope="row">Support-E-Mails</th><td>Bis zu 2 Jahre nach unserer letzten Nachricht, außer wir brauchen sie länger für einen Rechtsanspruch.</td></tr>
+      <tr><th scope="row">Website-Logs</th><td>Wie in der Datenschutzerklärung von GitHub beschrieben.</td></tr>
+      <tr><th scope="row">Daten auf deinem iPhone</th><td>Bis du deinen Account löschst, dich auf diesem iPhone mit einem anderen Account anmeldest oder die App löschst. Beim Abmelden bleiben sie auf dem iPhone.</td></tr>
+    </table>
+    <p><strong>Deinen Account löschen.</strong> Einstellungen → dein Name ganz oben → <strong>Account löschen</strong> löscht deinen Account mit allen Daten sofort aus dem Account-Dienst und entfernt die Daten von LoadOut auf diesem iPhone. Hast du dich mit Apple angemeldet, holt die App zuerst einen Einmalcode von Apple und gibt ihn über den Account-Dienst an Apple weiter; Apple entfernt LoadOut dann aus den Apps, die „Mit Apple anmelden“ nutzen. Hast du dich mit Google angemeldet, endet auch der Zugriff von LoadOut auf dein Google-Konto. Ein App-Store-Abo wird durch das Löschen nicht gekündigt; kündige es in den Einstellungen deines iPhones.</p>
+  </div>
+
+  <h2 id="rights">14. Deine Rechte</h2>
+  <div class="card">
+    <p>Du kannst Auskunft über deine Daten und ihre Verarbeitung sowie eine Kopie verlangen, sie berichtigen oder löschen lassen, ihre Verarbeitung einschränken lassen und sie in einem übertragbaren Format erhalten. Wo wir uns auf deine Einwilligung stützen, kannst du sie jederzeit widerrufen. Vieles davon erledigst du selbst in der App:</p>
+    <ul>
+      <li><strong>Kopie erhalten:</strong> Einstellungen → dein Name ganz oben → <strong>Meine Daten exportieren</strong> gibt dir alles aus deinem Account als JSON-Datei.</li>
+      <li><strong>Berichtigen:</strong> Bearbeite oder lösche jeden Eintrag in der App und deinen Namen in deinem Profil.</li>
+      <li><strong>Einwilligung widerrufen:</strong> Einstellungen → dein Name ganz oben → <strong>Einwilligung zum Körpergewicht widerrufen</strong>.</li>
+      <li><strong>Löschen:</strong> Einstellungen → dein Name ganz oben → <strong>Account löschen</strong>.</li>
+    </ul>
+    <p class="notice"><strong>Dein Widerspruchsrecht.</strong> Wo wir deine Daten aufgrund unserer berechtigten Interessen verarbeiten (Art. 6 Abs. 1 lit. f), kannst du jederzeit aus Gründen, die sich aus deiner besonderen Situation ergeben, widersprechen. Wir hören dann damit auf, es sei denn, wir haben zwingende schutzwürdige Gründe, die deine Interessen überwiegen, oder brauchen die Daten zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</p>
+    <p>Für alles andere schreib an <a href="mailto:joelschaerenvfx@gmail.com">joelschaerenvfx@gmail.com</a>. Das ist kostenlos. Wir antworten innerhalb von 30 Tagen und bitten dich eventuell, die Anfrage von der E-Mail-Adresse deines Accounts aus zu bestätigen, damit niemand sonst an deine Daten kommt.</p>
+    <p>Du kannst dich auch bei einer Datenschutzbehörde beschweren: in der Schweiz beim <a href="https://www.edoeb.admin.ch/de">Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB)</a>, in der EU bei <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_de">der Behörde deines Landes</a>.</p>
+  </div>
+
+  <h2 id="children">15. Kinder</h2>
+  <div class="card">
+    <p>LoadOut ist nicht für Kinder unter 16 Jahren gedacht, und wir erstellen wissentlich keine Accounts für sie. Wenn du glaubst, dass ein Kind einen Account hat, melde dich bei uns, und wir löschen ihn.</p>
+  </div>
+
+  <h2 id="changes">16. Änderungen</h2>
+  <div class="card">
+    <p>Wenn sich diese Datenschutzerklärung ändert, aktualisieren wir sie hier mit neuem Datum und neuer Version. Betrifft eine Änderung, wie deine Daten genutzt werden, weist dich die App darauf hin und bittet dich, sie zu lesen, bevor du weitermachst.</p>
+  </div>
+
+  <footer>LoadOut · <a href="terms.html" hreflang="en">Terms of Service</a> (Englisch) · <a href="support.html" hreflang="en">Support</a> · Joel Schaeren, Thunstrasse 20 A, 3110 Münsingen, Schweiz</footer>
+</main>
+</body>
+</html>
